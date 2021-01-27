@@ -63,7 +63,7 @@ export default class NewClass extends cc.Component {
                 cc.callFunc(()=>{
 
                     for(let knifeNode of this.knifeNodeArr){
-                        if (Math.abs(knifeNode.angle)  < this.gap || Math.abs(360 - knifeNode.angle) < this.gap)
+                        if (Math.abs(knifeNode.angle) < this.gap || (360 -Math.abs(knifeNode.angle)) < this.gap)
                         this.isHit = true
                         break
                     }
